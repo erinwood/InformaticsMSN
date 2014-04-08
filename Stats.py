@@ -1,5 +1,8 @@
 grades = [96, 93, 88, 100, 75.5, 89, 82, 100, 94.5, 96, 100]
 
+def print_grades(grades):
+    for grade in grades:
+        print grade
 
 def grades_sum(scores):
     total = 0
@@ -26,6 +29,7 @@ def grades_std_deviation(variance):
     
 variance = grades_variance(grades)       
 
+print print_grades(grades)
 print grades_sum(grades)
 print grades_average(grades)
 print grades_variance(grades)
