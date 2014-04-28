@@ -1,0 +1,193 @@
+from sys import exit
+
+def mk_park():
+	print "You picked to go to the MK!"
+	print "How do you get there?"
+	
+	
+	while True: 
+	
+		next = raw_input ("> ")
+		if next == "monorail":
+			monorail()
+		elif next == "boat":
+			end("The boat breaks down! You get free annual passes for life!  HOORAY!")
+		else:
+			print "You gotta go by boat or monorail silly!!"
+			
+		
+def monorail():
+	print "You're smart.  That's the best way"
+	print "So where to next?"
+	print "Rides? Get something to eat? Walk around?"
+	
+	next = raw_input ("> ")
+	
+	if "eat" in next or "get something to eat" in next or "Eat" in next:
+		eat()
+	elif "rides" in next or "ride" in next or "Rides" in next or "Ride" in next:
+		ride()
+	elif "Walk" in next or "walk" in next:
+		walk()
+	else:
+		end("That sounds boring...")
+
+def ride():
+	print "There are so many to pick from!"
+	print "You pick a good one"
+	
+	end("You end up getting too motion sick and have to go home, sorry!")
+	
+def eat():
+	print "So you walk into a food court"
+	print "The food is so good!"
+	print "You eat so much food!"
+	
+	end("You eat so much that you throw up all over Mickey! Oh no!")
+	
+def walk():
+	print "You get lost!"
+	print "You walk forever!"
+	
+	end("You walk so long that your feet fall off.  You get placed as an extra in the Hall of Presidents!")
+
+
+	
+def start():
+	print "It is your lucky day! You get to go to a Disney park!"
+	print "Where to you decide to go?"
+	
+	next = raw_input ("> ")
+	
+	if next == "magic kingdom" or next == "mk":
+		mk_park()
+	elif next == "Epcot" or next == "EPCOT" or next == "epcot":
+		epcot_park()
+	else:
+		end("You didn't pick one of the good ones! You'll have a bad time")
+		
+def epcot_park():
+	print "Ah EPCOT!"
+	print "So much culture!"
+	print "So what do we do here?"
+	print "Walk around aimlessly? Get something to eat? Grab a drink? Explore countries?"
+	next = raw_input("> ")
+
+	while True:
+	
+		if "walk" in next or "Walk" in next:
+			walk()
+		elif "eat" in next or "Eat" in next:
+			eat()
+		elif "drink" in next or "beer" in next or "Drink" in next or "DRINK" in next:
+			drink()
+		elif "country" in next or "countries" in next or "Countries" in next or "Country" in next or "explore" in next or "Explore" in next:
+			country()
+		else: 
+			print "You have to think of something better than that!" 
+			next= raw_input("> ")
+			
+def country():
+	print "There are so many countries in EPCOT!"
+	print "Where should we go?"
+	
+	next = raw_input("> ")
+	
+	if "Germany" in next or "germany" in next:
+		germany()
+	elif "Mexico" in next or "mexico" in next:
+		mexico()
+	elif "Norway" in next or "norway" in next:
+		norway()
+	elif "America" in next or "america" in next or "USA" in next or "usa" in next:
+		america()
+	else: 
+		end("You picked a boring country, no booze to be found really and not even a ride!!  Sorry....")
+		
+def drink():
+	print "EPCOT is a place for wonderful drinks"
+	print "What do you get to drink?"
+	next = raw_input("> ")
+	
+	while True:
+	
+		if "coffee" in next or "Coffee" in next:
+			end ("That was a tasty treat! EPCOT really is the best!")
+		else:
+			print "Not a good enough answer"
+			print "Maybe you want some coffee??"
+			next = raw_input ("> ")
+			
+def germany():
+	print "Willkommen in Deutschland!"
+	print "Germay is so far from the entrance.  Maybe you could use some caffeine"  
+	drink()	
+	
+	
+def mexico():
+	print "Hola Hermano!"
+	print "There's a ride in Mexico, there're drinks in Mexico, or shall you taunt the Mexican gods?"
+	print "OOOOOOOHHHHH"
+	next = raw_input("> ")
+	
+	while True:
+	
+		if "ride" in next or "Ride" in next:
+			ride()
+		elif "drink" in next or "Drink" in next:
+			drink()
+		elif "taunt" in next or "Taunt" in next or "god" in next or "Mexic" in next or "mexic" in next:
+			mexican_gods()
+		else:
+			print "That's a bad option, maybe pick something else?"
+			next = raw_input("> ")
+			
+def mexican_gods():
+	print "The great Mexican gods have granted you a chance to go to a new park?" 
+	print "Do you want to go to a new park?"
+	
+	next = raw_input("> ")
+	
+	while True:
+	
+		if next == "yes" or next == "y" or next == "Yes" or next == "Y":
+			start() 
+		elif next == "no" or next == "No" or next == "N" or next == "n":
+			print "Back to Mexico we go!"
+			mexico()
+		else:
+			print "Stop being indecisive, you must choose!"
+			next = raw_input("> ")
+			
+def norway():
+	print "The great land of Norway!"
+	end ("You go BACK! BACK! OVER THE FALLS!!!!!")
+			
+def america():
+	print "Land of the free"
+	print "Home of the Mouse!"
+	print "What do you want to do here?"
+	
+	next = raw_input("> ")
+	
+	while True:
+	
+		if "food" in next or "eat" in next or "Food" in next or "Eat" in next:
+			eat()
+		elif "drink" in next or "Drink" in next:
+			drink()
+		else:
+			print "That doesn't sound very American! Please pick again"
+			next = raw_input("> ")
+
+		
+def end(insert):
+	print insert, "Goodbye from the Happiest Place on Earth!"
+	exit (0)
+	
+start()
+	
+	
+	
+	
+	
