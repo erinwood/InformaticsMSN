@@ -1,3 +1,6 @@
+#Exercise 20 from "Learn Python the Hard Way."
+#11/05/2013
+
 from sys import argv
 
 script, input_file, other_thing = argv
