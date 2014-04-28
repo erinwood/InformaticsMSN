@@ -1,3 +1,5 @@
+#Program made within the Python course at wwww.codeacademy.com.  03/31/2014
+
 from random import randint
 
 board = []
