@@ -1,3 +1,5 @@
+#Calculations practice program.  11/18/2013
+
 def is_div_by_3(x):
 	if x % 3 == 0:
 		print x, "is div by 3"
