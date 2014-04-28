@@ -1,3 +1,6 @@
+#Exercise 3 from "Learn Python the Hard Way."
+#11/03/2013
+
 print "I will now count my chickens:"
 
 print "Hens" , 25.0 + 30.0 / 6.0
