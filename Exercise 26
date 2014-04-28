@@ -1,3 +1,6 @@
+#Exercise 26 from "Learn Python the Hard Way."
+#11/08/2014
+
 from ex25 import *
 
 def break_words(stuff):
