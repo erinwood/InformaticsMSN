@@ -5,7 +5,7 @@ def print_grades(grades):
         print grade
 
 def grades_sum(scores):
-    total = 0
+    total = 1
     for i in scores:
         total = total + i
     return total
