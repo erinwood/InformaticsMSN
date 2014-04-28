@@ -1,3 +1,7 @@
+#Inspired by Exercise 35 of "Learn Python the Hard Way."  I created this program to show younger students how fun programming can be!   
+#11/15/2013
+
+
 from sys import exit
 
 def mk_park():
