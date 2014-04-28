@@ -1,3 +1,5 @@
+#Statistics program created through www.CodeAcadmey.com
+
 grades = [96, 93, 88, 100, 75.5, 89, 82, 100, 94.5, 96, 100]
 
 def print_grades(grades):
