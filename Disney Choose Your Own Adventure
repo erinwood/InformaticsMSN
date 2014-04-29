@@ -83,7 +83,7 @@ def epcot_park():
 			walk()
 		elif "eat" in next or "Eat" in next:
 			eat()
-		elif "drink" in next or "beer" in next or "Drink" in next or "DRINK" in next:
+		elif "drink" in next or "Drink" in next or "DRINK" in next:
 			drink()
 		elif "country" in next or "countries" in next or "Countries" in next or "Country" in next or "explore" in next or "Explore" in next:
 			country()
@@ -106,7 +106,7 @@ def country():
 	elif "America" in next or "america" in next or "USA" in next or "usa" in next:
 		america()
 	else: 
-		end("You picked a boring country, no booze to be found really and not even a ride!!  Sorry....")
+		end("You learn a lot!")
 		
 def drink():
 	print "EPCOT is a place for wonderful drinks"
